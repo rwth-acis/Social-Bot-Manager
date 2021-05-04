@@ -471,6 +471,14 @@ public class RocketChatMediator extends ChatMediator implements ConnectListener,
 		// Creating Logical ChatRooms using factory class
 	}
 
+
+
+	@Override
+	public void sendAttachmentMessageToChannel(String channel, String attachments, OptionalLong id){}
+
+	@Override
+	public void sendBlocksMessageToChannel(String channel, String blocks, OptionalLong id){}
+
 	@Override
 	public void onMessage(String arg0, RocketChatMessage message) {
 		ChatRoom room = client.getChatRoomFactory().getChatRoomById(message.getRoomId());

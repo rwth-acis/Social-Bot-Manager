@@ -78,6 +78,10 @@ public class Messenger {
 		this.knownIntents.put(msg.getIntentKeyword(), msg);
 	}
 
+	public HashMap<String, IncomingMessage> getKnownIntents() {
+		return this.knownIntents;
+	}
+
 	public ChatMediator getChatMediator() {
 		return this.chatMediator;
 	}
